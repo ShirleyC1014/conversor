@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es" ng-app="conversorApp">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styleconversor.css">
+<title>Conversor</title>
+</head>
+
+<body ng-controller="conversorController">
+    <div class="container">
+<h1 class="container_title">Conversor de Pesos Colombianos a Dolares</h1>
+<h3 class="container_description">Ingrese la cantidad para convertirlo a dolares.</h3>
+<div class="form">
+    <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/Colombia-Bandera-America.png" width="30" height="auto">
+    <label for="pesosInput"><h4>Cantidad en pesos colombianos</h4></label>
+    <input type="number" class="form_input" placeholder="Ingrese la cantidad" ng-model="pesosInput">
+</div>
+<h3 class="container_info"><b>1 peso colombiano:</b> Es igual a 0.00026 dólar estadounidense<br>
+<b> 1 dólar estadounidense:</b> Es igual a 3,836.71 peso colombiano</h3>
+<!-- comentariooo -->
+
+<div class="btn_container">
+<button class="btn" ng-click="calcular()"><b>→ Calcular</b></button> 
+
+<h4 class="resultado" >Resultado: <strong>$ {{totalConversion}}</strong> <b>USD</b></h4>
+<img src="https://www.mundoprimaria.com/wp-content/uploads/2020/04/EEUU-Bandera-America.png" width="30" height="auto">
+</div>
+<!-- framework-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+<!-- mensajes de alerta-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+<!-- controller-->
+<script src="conversorController.js"></script>
+
+</body>
+</html>

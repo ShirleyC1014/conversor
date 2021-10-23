@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    background-color:#F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Este es un comentariooo*/
+.container {
+    width: 60%;
+    margin: 80px auto;
+}
+
+.container_title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 30px 0 5px 0;
+    color: #FF8B00;
+    text-align: center;
+}
+
+.container_description {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container_info {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.resultado {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 0;
+    background-color: #FF8B00;
+    border-radius: 20px;
+    color: #F7F7F7;
+}
+
+.form {
+    padding: 10px 0 ;
+
+}
+
+.form_input {
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn_container, .resultado {
+    text-align: center;
+}
+
+.btn {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:#95C11F;
+    border: none;
+    cursor: pointer;
+}
